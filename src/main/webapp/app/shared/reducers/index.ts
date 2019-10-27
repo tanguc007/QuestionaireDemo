@@ -13,6 +13,26 @@ import password, { PasswordState } from 'app/modules/account/password/password.r
 import settings, { SettingsState } from 'app/modules/account/settings/settings.reducer';
 import passwordReset, { PasswordResetState } from 'app/modules/account/password-reset/password-reset.reducer';
 import sessions, { SessionsState } from 'app/modules/account/sessions/sessions.reducer';
+// prettier-ignore
+import question, {
+  QuestionState
+} from 'app/entities/question/question.reducer';
+// prettier-ignore
+import answer, {
+  AnswerState
+} from 'app/entities/answer/answer.reducer';
+// prettier-ignore
+import survey, {
+  SurveyState
+} from 'app/entities/survey/survey.reducer';
+// prettier-ignore
+import applicant, {
+  ApplicantState
+} from 'app/entities/applicant/applicant.reducer';
+// prettier-ignore
+import userSurvey, {
+  UserSurveyState
+} from 'app/entities/user-survey/user-survey.reducer';
 /* jhipster-needle-add-reducer-import - JHipster will add reducer here */
 
 export interface IRootState {
@@ -27,6 +47,11 @@ export interface IRootState {
   readonly password: PasswordState;
   readonly settings: SettingsState;
   readonly sessions: SessionsState;
+  readonly question: QuestionState;
+  readonly answer: AnswerState;
+  readonly survey: SurveyState;
+  readonly applicant: ApplicantState;
+  readonly userSurvey: UserSurveyState;
   /* jhipster-needle-add-reducer-type - JHipster will add reducer type here */
   readonly loadingBar: any;
 }
@@ -43,6 +68,11 @@ const rootReducer = combineReducers<IRootState>({
   password,
   settings,
   sessions,
+  question,
+  answer,
+  survey,
+  applicant,
+  userSurvey,
   /* jhipster-needle-add-reducer-combine - JHipster will add reducer here */
   loadingBar
 });

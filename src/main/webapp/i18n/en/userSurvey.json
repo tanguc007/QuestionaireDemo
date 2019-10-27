@@ -1,0 +1,23 @@
+{
+  "questionaireDemoApp": {
+    "userSurvey": {
+      "home": {
+        "title": "User Surveys",
+        "createLabel": "Create a new User Survey",
+        "createOrEditLabel": "Create or edit a User Survey",
+        "notFound": "No User Surveys found"
+      },
+      "created": "A new User Survey is created with identifier {{ param }}",
+      "updated": "A User Survey is updated with identifier {{ param }}",
+      "deleted": "A User Survey is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete User Survey {{ id }}?"
+      },
+      "detail": {
+        "title": "User Survey"
+      },
+      "user": "User",
+      "survey": "Survey"
+    }
+  }
+}
