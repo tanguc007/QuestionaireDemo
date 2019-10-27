@@ -1,0 +1,38 @@
+{
+    "name": "Question",
+    "fields": [
+        {
+            "fieldName": "text",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "order",
+            "fieldType": "Long"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "answer",
+            "otherEntityRelationshipName": "question",
+            "relationshipName": "answers"
+        },
+        {
+            "relationshipName": "survey",
+            "otherEntityName": "survey",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20191027172119",
+    "javadoc": "The firstname attribute.",
+    "entityTableName": "question",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}
